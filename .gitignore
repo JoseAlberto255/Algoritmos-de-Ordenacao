@@ -1,0 +1,18 @@
+# Java
+*.class
+java/out/
+
+# C++
+cpp/build/
+*.o
+*.out
+
+# Dados gerados
+data/*
+!data/.gitkeep
+
+# Python / editor
+__pycache__/
+.vscode/
+.idea/
+EOF
