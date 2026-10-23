@@ -1,0 +1,5 @@
+#include "bubble_sort.hpp"
+#include "bubble_sort_otimizado.hpp"
+#include "insertion_sort.hpp"
+#include "selection_sort.hpp"
+#include "selection_sort_estavel.hpp"
