@@ -3,3 +3,4 @@
 #include "insertion_sort.hpp"
 #include "selection_sort.hpp"
 #include "selection_sort_estavel.hpp"
+#include "counting_sort.hpp"
