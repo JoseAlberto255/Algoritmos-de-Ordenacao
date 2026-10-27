@@ -4,3 +4,6 @@
 #include "selection_sort.hpp"
 #include "selection_sort_estavel.hpp"
 #include "counting_sort.hpp"
+#include "merge_sort.hpp"
+#include "quick_sort.hpp"
+#include "quick_sort_shuffle.hpp"

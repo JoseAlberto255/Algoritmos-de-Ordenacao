@@ -2,9 +2,6 @@
 #include <sstream>
 #include <string>
 #include <vector>
-
-#include "sorting/merge_sort.hpp"
-#include "sorting/selection_sort.hpp"
 #include "sorting/sorting.hpp"
 
 using namespace std;
@@ -18,7 +15,7 @@ int main() {
     vector<int> original = {5, 3, 8, 1, 9, 2};
     stringstream para_ordenar;
 
-    
+
     vector<Algoritmo> algoritmos = {
         {"BubbleSort", ed::bubble_sort},
         {"BubbleSortOtimizado", ed::bubble_sort_otimizado},
@@ -26,19 +23,21 @@ int main() {
         {"SelectionSort", ed::selection_sort},
         {"SelectionSortEstavel", ed::selection_sort_estavel},
         {"CountingSort", ed::counting_sort},
-        {"MergeSort", ed::merge_sort}
+        {"MergeSort", ed::merge_sort},
+        {"QuickSort", ed::quick_sort},
+        {"QuickSortShuffle", ed::quick_sort_shuffle}
         // ... demais algoritmos
     };
-    
+
     for (int v : original) para_ordenar << v;
-    
+
     cout << "Original: " + para_ordenar.str() + "\n";
 
 
     for (auto& a : algoritmos) {
         vector<int> copia = original;            // cópia fora da medição
         a.func(copia);
-        
+
         cout << a.nome << ":";
         for (int x : copia) cout << " " << x;
         cout << "\n";

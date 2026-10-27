@@ -1,0 +1,5 @@
+#include "busca_linear_iterativa.hpp"
+#include "busca_linear_recursiva.hpp"
+#include "busca_linear_duas_pontas.hpp"
+#include "busca_binaria_iterativa.hpp"
+#include "busca_binaria_recursiva.hpp"
