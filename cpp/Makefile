@@ -4,10 +4,10 @@ BUILD    = build
 
 all: $(BUILD)/ordenacao $(BUILD)/busca
 
-$(BUILD)/ordenacao: src/main_ordenacao.cpp $(wildcard include/*/*.hpp) | $(BUILD)
+$(BUILD)/ordenacao: src/main_ordenacao.cpp $(wildcard include/sorting/*.hpp) | $(BUILD)
 	$(CXX) $(CXXFLAGS) src/main_ordenacao.cpp -o $@
 
-$(BUILD)/busca: src/main_busca.cpp $(wildcard include/*/*.hpp) | $(BUILD)
+$(BUILD)/busca: src/main_busca.cpp $(wildcard include/search/*.hpp) | $(BUILD)
 	$(CXX) $(CXXFLAGS) src/main_busca.cpp -o $@
 
 $(BUILD):
