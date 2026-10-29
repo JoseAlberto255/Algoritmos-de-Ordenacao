@@ -2,6 +2,15 @@ package ed.sorting;
 
 public class CountingSort {
 
+    public static void countingSort(int[] vetorA) {
+        if (vetorA == null || vetorA.length == 0) return;
+        int k = vetorA[0];
+        for (int i = 1; i < vetorA.length; i++) {
+            if (vetorA[i] > k) k = vetorA[i];
+        }
+        countingSort(vetorA, k);
+    }
+
     public static void countingSort(int[] vetorA, int k) {
 
         int[] vetorB = new int[vetorA.length];
