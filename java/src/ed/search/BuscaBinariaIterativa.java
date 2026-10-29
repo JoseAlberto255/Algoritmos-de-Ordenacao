@@ -1,4 +1,4 @@
-package ed.searching;
+package ed.search;
 
 public class BuscaBinariaIterativa {
 
