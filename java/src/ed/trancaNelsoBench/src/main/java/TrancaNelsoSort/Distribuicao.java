@@ -5,7 +5,7 @@ import java.util.Random;
 
 public enum Distribuicao {
 
-    //Bem distribuído: uniforme em todo o intervalo.
+    //Bem distribuido: uniforme no intervalo
     UNIFORME,
 
     //Concentrado no meio do intervalo (sino com desvio de 5% do intervalo)

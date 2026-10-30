@@ -34,7 +34,7 @@ import java.util.concurrent.TimeUnit;
  * Tempo médio para ordenar CPFs (11 dígitos, como long) em diferentes distribuições.
  *
  * Cada invocação copia a massa original para um buffer de trabalho antes de ordenar.
- * O método controleCopia mede só essa cópia: o custo é o mesmo para todos os
+ * O metodo controleCopia mede só essa cópia: o custo é o mesmo para todos os
  * algoritmos, então dá para subtrair do resultado se quiser o tempo puro de ordenação.
  */
 
